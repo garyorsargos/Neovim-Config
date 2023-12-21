@@ -626,6 +626,8 @@ vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
 
 
+-- Post Harpoon Configs
+
 -- Aerial Setup
 require("aerial").setup({
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
