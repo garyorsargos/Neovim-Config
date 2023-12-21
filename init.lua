@@ -638,6 +638,16 @@ require("aerial").setup({
 -- You probably also want to set a keymap to toggle aerial
 vim.keymap.set("n", "<leader>aa", "<cmd>AerialToggle!<CR>")
 
+-- Configure Neotree
+require("neo-tree").setup({
+  filesystem = {
+        hijack_netrw_behavior = 'open_current'
+      }
+})
+
+
+-- Configure Background of theme
+
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
