@@ -220,7 +220,7 @@ require('lazy').setup({
 -- See `:help vim.o`
 
 -- Set relative line numbers
-vim.wo.relativenumber = false
+vim.wo.relativenumber = true
 
 -- Set highlight on search
 vim.o.hlsearch = false
@@ -235,7 +235,8 @@ vim.o.mouse = 'a'
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.o.clipboard = 'unnamedplus'
-
+-- Prevent having less than 8 lines between cursor and bottom
+vim.o.scrolloff = 8
 -- Enable break indent
 vim.o.breakindent = true
 
