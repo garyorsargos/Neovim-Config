@@ -1,1 +1,0 @@
-return {"stevearc/aerial.nvim"}
