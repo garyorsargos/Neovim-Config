@@ -45,6 +45,10 @@ require('lazy').setup({
     'marko-cerovac/material.nvim',
     priority = 1000,
     config = function()
+      vim.cmd [[
+         hi Cursor guibg=#c9d0d9 guifg=#c9d0d9
+          hi lCursor guibg=#c9d0d9 guifg=#c9d0d9
+        ]]
       vim.cmd.colorscheme 'material-darker'
     end,
   },
